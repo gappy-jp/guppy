@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+   <meta charset="utf-8">
+   <title>guppy top page</title>
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+   <link rel="stylesheet" type="text/css" href="css/angular-snap.css"/>
+   <link rel="stylesheet" type="text/css" href="css/guppy.css"/>
+</head>
+<body ng-app="guppyApp" ng-controller="guppyCtrl">
+   <div id="shelf-1" snap-drawer>
+      <h1>HELLO</h1>
+      <p>left drawer here</p>
+      <p>hello im your content</p>
+      <p>HOO</p>
+      <a href='#view1'>CLIQUE VIEW => 1</a><br>
+      <a href='#view2'>CLIQUE VIEW => 2----------------------------</a><br>
+      <button class="btn btn-primary btn-small" snap-close>Done</button>
+   </div>
+
+   <div id="content" snap-content snap-options="opts">
+      <h1>slide me plz</h1>
+      <button snap-toggle="left">むすんでひらいて</button>
+      <div ng-view></div>
+   </div>
+
+   <script src="lib/angular/angular.js"></script>
+   <script src="lib/angular/angular-route.js"></script>
+   <script src="lib/ui-bootstrap-tpls-0.7.0.js"></script>
+   <script src="lib/snap.js"></script>
+   <script src="lib/angular-snap.js"></script>
+   <script src="js/app.js"></script>
+   <script src="js/services.js"></script>
+   <script src="js/controllers.js"></script>
+   <script src="js/filters.js"></script>
+   <script src="js/directives.js"></script>
+</body>
+</html>
+

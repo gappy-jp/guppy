@@ -1,0 +1,14 @@
+html, body, #content {
+   height: 100%;
+   width: 100%;
+}
+
+#content {
+   background: white;
+}
+
+#shelf-1 {
+   /*width: 235px;*/
+   padding: 0 10px;
+   background: aliceblue;
+}
