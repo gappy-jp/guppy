@@ -1,14 +1,53 @@
-html, body, #content {
-   height: 100%;
-   width: 100%;
+html, body {
+   display: inline-block;
 }
 
-#content {
-   background: white;
+body {
+   overflow-x: auto;
+   overflow-y: auto;
+   margin-top: 40px;
+   margin-left: 10px;
 }
 
-#shelf-1 {
-   /*width: 235px;*/
-   padding: 0 10px;
-   background: aliceblue;
+.bs-docs-nav {
+   background-color: #348edb;
+   border-color: #348edb;
+}
+
+.bs-docs-nav .navbar-collapse {
+   border-color: #348edb;
+}
+
+.bs-docs-nav .navbar-brand {
+   float: left;
+   display: block;
+   padding: 10px 20px 10px;
+   margin-left: 5px;
+   font-size: 20px;
+   font-weight: 200;
+   color: #ffffff;
+}
+
+.bs-docs-nav .navbar-nav > li > a {
+   color: #ffffff;
+   font-size: 15px;
+}
+
+.bs-docs-nav .navbar-nav > li > a:hover {
+   color: #ffffff;
+}
+
+.bs-docs-nav .navbar-nav > .active > a,
+.bs-docs-nav .navbar-nav > .active > a:hover {
+   color: #348edb;
+   background-color: #ffffff;
+}
+
+.bs-docs-nav .navbar-toggle {
+   border-color: #348edb;
+}
+
+.bs-docs-nav .navbar-toggle:hover {
+   background-color: #348edb;
+   border-color: #348edb;
 }
